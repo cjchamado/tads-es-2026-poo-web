@@ -35,7 +35,7 @@ docker compose up --build
 > Para garantir que tudo está OK, utilize este formato somente depois da primeira vez que rodar os containers.
 
 ```sh
-docker compose up --build -d
+docker compose up -d
 ```
 
 ## Check
