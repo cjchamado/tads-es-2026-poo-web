@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Category;
+use App\Http\Requests\CategoryStoreRequest;
 
 class CategoryController extends Controller
 {
@@ -12,7 +13,7 @@ class CategoryController extends Controller
         return Category::paginate();
     }
 
-    public function store(Request $request)
+    public function store(CategoryStoreRequest $request)
     {
         $category = new Category();
         $category->name = $request->name;
