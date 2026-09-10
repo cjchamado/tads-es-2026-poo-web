@@ -1,0 +1,36 @@
+
+@baseUri = http://localhost:8182/api
+
+### Index
+GET {{baseUri}}/customers HTTP/1.1
+content-type: application/json
+
+### Store
+POST {{baseUri}}/customers HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Cliente Novo Teste",
+    "email": "email2@example.com",
+    "phone": "554429988770",
+    "birth_date": "1998-07-30"
+}
+
+### Show
+GET {{baseUri}}/customers/2 HTTP/1.1
+content-type: application/json
+
+### Update
+PUT {{baseUri}}/customers/2 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Cliente Novo Atualizado",
+    "email": "email2@example.com",
+    "phone": "554429988770",
+    "birth_date": "1998-07-30"
+}
+
+### Delete
+DELETE  {{baseUri}}/customers/3 HTTP/1.1
+content-type: application/json
