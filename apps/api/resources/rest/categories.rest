@@ -17,16 +17,17 @@ content-type: application/json
 ### Show
 # 126 é o ID da categoria neste exemplo.
 # Utilize um ID existente em sua base de dados.
-GET {{baseUri}}/categories/132 HTTP/1.1
+GET {{baseUri}}/categories/140 HTTP/1.1
 content-type: application/json
 
 ### Update
 # 126 é o ID da categoria neste exemplo.
 # Utilize um ID existente em sua base de dados.
-PUT {{baseUri}}/categories/132 HTTP/1.1
+PUT {{baseUri}}/categories/140 HTTP/1.1
 content-type: application/json
 
 {
+    "name": "Category name updated...",
     "description": "Categoria up2 ATUALIZADA via API/REST"
 }
 
