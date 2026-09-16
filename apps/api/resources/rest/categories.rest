@@ -1,9 +1,7 @@
-
-@baseUri = http://localhost:8182/api
-
 ### Index
 GET {{baseUri}}/categories HTTP/1.1
 content-type: application/json
+Authorization: Bearer {{accessToken}}
 
 ### Store
 POST {{baseUri}}/categories HTTP/1.1
