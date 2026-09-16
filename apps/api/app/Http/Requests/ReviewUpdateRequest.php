@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CustomerUpdateRequest extends FormRequest
+class ReviewUpdateRequest extends FormRequest
 {
     public function authorize(): bool
     {
@@ -14,10 +14,8 @@ class CustomerUpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'string|nullable',
-            'email' => 'string|nullable',
-            'phone' => 'string|nullable',
-            'birth_date' => 'date|nullable'
+            'rating' => 'numeric|gte:1|lte:5|nullable',
+            'comment' => 'string|nullable',
         ];
     }
 }
