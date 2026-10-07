@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Notify } from 'quasar'
 
 const getToken = () => {
-  return null;
+  return '20|1rg9SoDLnlEQuo83SoefhKqmb3vE5kdBZunmynYO0dab3643';
 }
 
 const api = axios.create({ baseURL: import.meta.env.QCLI_API_URL })
